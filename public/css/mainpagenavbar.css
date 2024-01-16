@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+  }
+
+body {
+    margin: auto;
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+/** NAVIGATION BAR **/
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff00;
+    padding: 10px 20px;
+    overflow:auto;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.dropdown {
+    position: static;
+}
+
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #797878;
+    outline-style:outset;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.dropbtn {
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+.arrow {
+    border: solid rgb(0, 0, 0);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 4;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+    
+
+.dropbtn:hover {background-color: #ddd;}
+/** END OF NAVIGATION BAR **/
+
+/** HOME BANNER **/
+
+.Home-Banner{
+   background-image: url("/css/image/Delex Post.jpg");
+   display: flex;
+   align-items: stretch;
+   flex-direction: column;
+}
+
+/** END HOME BANNER**/
+
+@media screen and (max-width: 720px) {
+    .navbar a, .dropdown, .arrow {
+        padding: 5px 10px;
+    }
+
+    .dropdown-content a, .navbar {
+        padding: 5px 10px;
+    }
+}
